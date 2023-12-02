@@ -14,29 +14,27 @@ jobs:
                     channel-id: 'C067X2VLEVD'
                     payload:    |
                         {
-                            {
-                                "attachments": [
-                                    {
-                                        "blocks": [
-                                            {
-                                                "type": "section",
-                                                "text": {
-                                                    "type": "mrkdwn",
-                                                    "text": "This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>"
-                                                }
-                                            },
-                                            {
-                                                "type": "header",
-                                                "text": {
-                                                    "type": "plain_text",
-                                                    "text": "Message Header",
-                                                    "emoji": true
-                                                }
+                            "attachments": [
+                                {
+                                    "blocks": [
+                                        {
+                                            "type": "section",
+                                            "text": {
+                                                "type": "mrkdwn",
+                                                "text": "hello"
                                             }
-                                        ]
-                                    }
-                                ]
-                            }
+                                        },
+                                        {
+                                            "type": "header",
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Message Header",
+                                                "emoji": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                 env:
                     SLACK_BOT_TOKEN:    ${{ secrets.SLACK_BOT_TOKEN }}
